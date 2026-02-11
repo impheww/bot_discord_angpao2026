@@ -4,7 +4,7 @@ from discord.ext import commands
 import time
 from myserver import server_on
 
-LOG_CHANNEL_ID = 1470417750319960168
+LOG_CHANNEL_ID = 1470403835234357258
 
 # ===== Intents =====
 intents = discord.Intents.default()
@@ -127,5 +127,6 @@ async def setup(ctx):
     await ctx.send(embed=embed, view=MainView())
 
 server_on()
+
 
 bot.run(os.getenv("TOKEN"))
